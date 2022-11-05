@@ -1,0 +1,8 @@
+---
+profiles:
+  local:
+    private_key: "0xa7a12878a134ad117992f10efba2d709b3ff322775553a9c0d520d5ac8a75f58"
+    public_key: "0x7af842dca4242f42f1b434a098100e4ef0f156d048769b6255fdad3904eec197"
+    account: 66094c702d5f730c463aa359d8934c6d49f71f7bf89d5788240c235129133adf
+    rest_url: "http://localhost:8080"
+    faucet_url: "http://localhost:8081"

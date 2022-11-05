@@ -1,0 +1,19 @@
+{
+  "name": "hello-world-example",
+  "version": "0.1.0",
+  "description": "Sample programs to demonstrate how to develop smart contract for Aptos blockchain",
+  "author": "Tung Nguyen",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/tungnguyen17/aptos-examples#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tungnguyen17/aptos-examples.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tungnguyen17/aptos-examples/issues"
+  },
+  "scripts": {
+    "build:hello_world": "aptos move compile --package-dir ./hello_world_example/contracts",
+    "deploy:hello_world": "aptos account fund-with-faucet --profile local --account local --amount 1000000 && aptos move publish --profile local --package-dir ./hello_world_example/contracts --sender-account local --assume-yes"
+  }
+}
