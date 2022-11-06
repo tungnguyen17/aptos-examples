@@ -14,6 +14,8 @@
   },
   "scripts": {
     "build:hello_world": "aptos move compile --package-dir ./hello_world_example/contracts",
-    "deploy:hello_world": "aptos account fund-with-faucet --profile local --account local --amount 1000000 && aptos move publish --profile local --package-dir ./hello_world_example/contracts --sender-account local --assume-yes"
+    "build:fungible_token": "aptos move compile --package-dir ./fungible_token_example/contracts",
+    "deploy:hello_world": "aptos account fund-with-faucet --profile local --account local --amount 1000000 && aptos move publish --profile local --package-dir ./hello_world_example/contracts --sender-account local --assume-yes",
+    "deploy:fungible_token": "aptos account fund-with-faucet --profile local --account local --amount 1000000 && aptos move publish --profile local --package-dir ./fungible_token_example/contracts --sender-account local --assume-yes"
   }
 }

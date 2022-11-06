@@ -1,4 +1,4 @@
-module hello_world::main {
+module hello_world::hello_world {
 
   struct Counter has key {
     count: u64,
