@@ -15,15 +15,22 @@
   "scripts": {
     "build:hello_world": "aptos move compile --package-dir ./hello_world_example/contracts",
     "build:fungible_token": "aptos move compile --package-dir ./fungible_token_example/contracts",
+    "build:merkle_tree": "aptos move compile --package-dir ./merkle_tree_example/contracts",
     "deploy:hello_world": "aptos account fund-with-faucet --profile local --account local --amount 1000000 && aptos move publish --profile local --package-dir ./hello_world_example/contracts --sender-account local --assume-yes",
     "deploy:fungible_token": "aptos account fund-with-faucet --profile local --account local --amount 1000000 && aptos move publish --profile local --package-dir ./fungible_token_example/contracts --sender-account local --assume-yes",
-    "test:hello_world": "ts-mocha -p ./tsconfig.mocha.json ./hello_world_example/**/*.spec.ts --timeout 50000"
+    "deploy:merkle_tree": "aptos account fund-with-faucet --profile local --account local --amount 1000000 && aptos move publish --profile local --package-dir ./merkle_tree_example/contracts --sender-account local --assume-yes",
+    "test:hello_world": "ts-mocha -p ./tsconfig.mocha.json ./hello_world_example/**/*.spec.ts --timeout 50000",
+    "test:merkle_tree": "ts-mocha -p ./tsconfig.mocha.json ./merkle_tree_example/**/*.spec.ts --timeout 50000"
   },
   "dependencies": {
-    "aptos": "^1.3.16"
+    "aptos": "^1.3.16",
+    "crypto-js": "^4.1.1",
+    "keccak": "^3.0.2"
   },
   "devDependencies": {
     "@types/chai": "^4.3.1",
+    "@types/crypto-js": "^4.1.1",
+    "@types/keccak": "^3.0.1",
     "@types/mocha": "^9.1.1",
     "chai": "^4.3.6",
     "dotenv": "^10.0.0",
