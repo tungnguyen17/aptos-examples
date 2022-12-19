@@ -1,4 +1,4 @@
-module hello_world::hello_world {
+module program::hello_world {
 
   use std::signer;
   use std::string;

@@ -1,4 +1,4 @@
-module fungible_token::tfx_token {
+module program::tfx_token {
 
   struct TfxToken {}
 

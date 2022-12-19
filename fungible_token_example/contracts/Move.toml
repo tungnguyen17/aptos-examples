@@ -4,7 +4,7 @@ version = "0.1.0"
 
 [addresses]
 system = "0x1"
-fungible_token = "0x66094c702d5f730c463aa359d8934c6d49f71f7bf89d5788240c235129133adf"
+program = "0x66094c702d5f730c463aa359d8934c6d49f71f7bf89d5788240c235129133adf"
 
 [dependencies.AptosFramework]
 git = "https://github.com/aptos-labs/aptos-core.git"
