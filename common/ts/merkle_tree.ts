@@ -90,10 +90,9 @@ class MerkleTree {
       for (let j = 0; j < subNodes.length; j += 2) {
         const hash0: Buffer = subNodes[j].hash;
         const hash1: Buffer = subNodes[j + 1].hash;
-        const newHash: Buffer =
-          hash0 <= hash1
-            ? hashFn(Buffer.concat([hash0, hash1]))
-            : hashFn(Buffer.concat([hash1, hash0]));
+        const newHash: Buffer = hash0.compare(hash1) <= 0
+          ? hashFn(Buffer.concat([hash0, hash1]))
+          : hashFn(Buffer.concat([hash1, hash0]));
         newNodes.push(<MerkleNode>{
           row: LEVEL_ARRAY[i],
           index: j / 2,
