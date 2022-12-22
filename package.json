@@ -13,12 +13,15 @@
     "url": "https://github.com/tungnguyen17/aptos-examples/issues"
   },
   "scripts": {
-    "build:hello_world": "aptos move compile --package-dir ./hello_world_example/contracts",
+    "build:binary": "aptos move compile --package-dir ./binary_example/contracts",
     "build:fungible_token": "aptos move compile --package-dir ./fungible_token_example/contracts",
+    "build:hello_world": "aptos move compile --package-dir ./hello_world_example/contracts",
     "build:merkle_tree": "aptos move compile --package-dir ./merkle_tree_example/contracts",
-    "deploy:hello_world": "aptos account fund-with-faucet --profile local --account local --amount 1000000 && aptos move publish --profile local --package-dir ./hello_world_example/contracts --sender-account local --assume-yes",
+    "deploy:binary": "aptos account fund-with-faucet --profile local --account local --amount 1000000 && aptos move publish --profile local --package-dir ./binary_example/contracts --sender-account local --assume-yes",
     "deploy:fungible_token": "aptos account fund-with-faucet --profile local --account local --amount 1000000 && aptos move publish --profile local --package-dir ./fungible_token_example/contracts --sender-account local --assume-yes",
+    "deploy:hello_world": "aptos account fund-with-faucet --profile local --account local --amount 1000000 && aptos move publish --profile local --package-dir ./hello_world_example/contracts --sender-account local --assume-yes",
     "deploy:merkle_tree": "aptos account fund-with-faucet --profile local --account local --amount 1000000 && aptos move publish --profile local --package-dir ./merkle_tree_example/contracts --sender-account local --assume-yes",
+    "test:binary": "ts-mocha -p ./tsconfig.mocha.json ./binary_example/**/*.spec.ts --timeout 50000",
     "test:hello_world": "ts-mocha -p ./tsconfig.mocha.json ./hello_world_example/**/*.spec.ts --timeout 50000",
     "test:merkle_tree": "ts-mocha -p ./tsconfig.mocha.json ./merkle_tree_example/**/*.spec.ts --timeout 50000"
   },
