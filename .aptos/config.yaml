@@ -1,8 +1,8 @@
 ---
 profiles:
   local:
-    private_key: "0xa7a12878a134ad117992f10efba2d709b3ff322775553a9c0d520d5ac8a75f58"
-    public_key: "0x7af842dca4242f42f1b434a098100e4ef0f156d048769b6255fdad3904eec197"
-    account: 66094c702d5f730c463aa359d8934c6d49f71f7bf89d5788240c235129133adf
+    private_key: "0xd9984465eb52691e319841eb1947d77f56bf105648dd0059df2d62cff1755e5a"
+    public_key: "0x5271ba7a3dfa0ca6a959488ee05becfeafbc95d5aa180532255ca91b055ccecf"
+    account: b2b2c3069734e5c7efa8507028d07d618b2e4640601a752fe82febe22f2fec58
     rest_url: "http://localhost:8080"
     faucet_url: "http://localhost:8081"

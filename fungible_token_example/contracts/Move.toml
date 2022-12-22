@@ -4,7 +4,7 @@ version = "0.1.0"
 
 [addresses]
 system = "0x1"
-program = "0x66094c702d5f730c463aa359d8934c6d49f71f7bf89d5788240c235129133adf"
+program = "0xb2b2c3069734e5c7efa8507028d07d618b2e4640601a752fe82febe22f2fec58"
 
 [dependencies.AptosFramework]
 git = "https://github.com/aptos-labs/aptos-core.git"
